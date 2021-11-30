@@ -68,7 +68,6 @@ COPY docker-entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 WORKDIR /var/www
-EXPOSE 9000
 USER www-data:www-data
 
 ENTRYPOINT ["/entrypoint.sh"]
